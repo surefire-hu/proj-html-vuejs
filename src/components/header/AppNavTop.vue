@@ -22,13 +22,20 @@ export default {
     <div class="bg-backgroundBottom">
     <div class="w-3/6 mx-auto flex justify-between items-center text-white">
     <div class="flex items-center">
-        <i class="fas fa-cube"></i> <!-- Icona -->
-        <span class="ml-2 p-2">Thekeynote</span>
-        <span>Subscribe to us</span>
+        <i class="fas fa-cube fa-xl mr-8"></i> 
+        <div class="mr-8 bg-buttonG h-12 flex items-center">
+        <span class="ml-2 p-2 m-8 text-gray-300">Thekeynote</span>
+        <i class="fa-solid fa-bars text-gray-300 p-4"></i>
+    </div>
+        <span class="text-sm text-gray-400">Subscribe to us</span>
     </div>
     <div class="flex items-center">
-        <button class="ml-4 bg-button text-white h-12 px-7">Purchase</button>
-        <button class="ml-2 text-gray-400 hover:text-white">Remove Frame</button>
+        <button class="ml-4 bg-button text-white h-12 px-7 text-sm">
+        <i class="fa-solid fa-cart-shopping mr-4 text-gray-300"></i>Purchase
+        </button>
+        <button class="ml-2 text-sm">
+        <i class="fa-solid fa-xmark fa-xl mr-4 ml-2 text-gray-300"></i>Remove Frame
+        </button>
     </div>
 </div>
 </div>
