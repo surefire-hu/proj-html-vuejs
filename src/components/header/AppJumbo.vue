@@ -4,9 +4,9 @@ export default {
         return {
             currentIndex: 0,
             images: [
-                'path/to/your/image1.jpg',
-                'path/to/your/image2.jpg',
-                'path/to/your/image3.jpg',
+                "1",
+                "2",
+                "3",
             ],
         };
     },
@@ -18,8 +18,8 @@ export default {
             <div v-show="currentIndex === 0" class="carousel-item">
                 <img src="/slider-1-bg.jpg" alt="Image 1" class="w-full h-192 object-cover" />
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                    <h1 class="text-4xl mb-10">CONFERENCE ON</h1>
-                    <h2 class="text-6xl font-extrabold mb-10">SOCIAL NETWORKS</h2>
+                    <p class="text-4xl mb-10">CONFERENCE ON</p>
+                    <p class="text-6xl font-extrabold mb-10">SOCIAL NETWORKS</p>
                     <hr class="border-t-2 border-white w-3/12 mx-auto mt-4" />
                     <p class="text-lg font-bold mb-10">23 - 26 MAY 2019 / SAN FRANCISCO / 8 SPEAKERS</p>
                     <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded mt-4">REGISTER ONLINE</a>
@@ -28,8 +28,8 @@ export default {
             <div v-show="currentIndex === 1" class="carousel-item">
                 <img src="/2-item-1.jpg" alt="Image 2" class="w-full h-192 object-cover" />
                 <div class="absolute inset-0 flex flex-col ml-192 items-center justify-center text-white text-center">
-                    <h1 class="text-8xl font-extrabold text-red-600 mb-4">MEET</h1>
-                    <h2 class="text-6xl font-bold">8 FAMOUS SPEAKERS</h2>
+                    <p class="text-8xl font-extrabold text-red-600 mb-4">MEET</p>
+                    <p class="text-6xl font-bold">8 FAMOUS SPEAKERS</p>
                     <p class="mt-4 text-lg">With quality of knowledge</p>
                     <a href="#" class="bg-buttonB text-white font-bold py-3 px-6 rounded mt-4">MEET SPEAKERS</a>
                 </div>
@@ -37,7 +37,7 @@ export default {
             <div v-show="currentIndex === 2" class="carousel-item">
                 <img src="/coutdown-bg1.jpg" alt="Image 3" class="w-full h-192 object-cover" />
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                    <h1 class="text-6xl font-bold">SUPPORT VIDEO BACKGROUND</h1>
+                    <p class="text-6xl font-bold">SUPPORT VIDEO BACKGROUND</p>
                     
                 </div>
             </div>

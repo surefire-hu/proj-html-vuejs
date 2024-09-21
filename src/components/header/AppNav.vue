@@ -1,6 +1,13 @@
 <script>
+import { links } from '../../store.js';
+
 export default {
     name: 'AppNav',
+    data() {
+        return {
+            links,
+        };
+    },
 };
 </script>
 
@@ -10,15 +17,10 @@ export default {
             <img src="/logo.png" alt="Logo" class="h-5 mr-4" />
         </div>
         <div class="flex space-x-6">
-            <a href="#" class="text-red-500 text-sm font-bold">HOME</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">PAGES</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">PROGRAM</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">TICKETS</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">SPEAKERS</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">PAPERS</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">BLOG</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">SHORTCODES</a>
-            <a href="#" class="text-gray-400 text-sm font-bold">I</a>
+            <a v-for="(link, key) in links" :key="key" :href="link.url" class="text-gray-400 text-sm font-bold" :class="link.class">
+                {{ link.text }}
+            </a>
+            <p class="text-gray-400 text-sm font-bold">I</p>
             <a href="#" class="text-gray-400 text-sm font-bold">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </a>
