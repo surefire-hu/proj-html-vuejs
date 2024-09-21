@@ -3,6 +3,7 @@ export default {
     name: 'AppTime',
     data() {
         return {
+            email:'',
             days: 0,
             hours: 0,
             minutes: 0,
@@ -64,7 +65,7 @@ export default {
                 placeholder="Please fill your email"
                 class="pl-6 pr-40 py-3 border border-gray-300"
             />
-            <button class="bg-red-600 text-white px-6 py-3 ml-8 border-b-red-700 border-b-4 font-bold">
+            <button class="bg-reds text-white px-6 py-3 ml-8 border-b-red-700 border-b-4 font-bold">
                 Subscribe
             </button>
         </div>

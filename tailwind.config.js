@@ -12,6 +12,7 @@ export default {
         button: '#181818',
         buttonG: '#3f3f3f',
         buttonB: '#0A9AF6',    
+        reds: '#F62B0A',    
       },
   },
   },

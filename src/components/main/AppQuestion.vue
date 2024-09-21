@@ -19,7 +19,7 @@ export default {
                     <h3 class="font-bold ml-3 my-4 inline-block">{{ question.title }}</h3>  
                 </div>
                 <p class="text-gray-400 text-sm ml-14 my-4 w-2/3">{{ question.overview }}</p>
-                <a href="#" class="text-red-500 font-serif ml-14">{{ question.link }}</a>
+                <a href="#" class="text-reds font-serif ml-14">{{ question.link }}</a>
             </div>
         </div>
 </template>

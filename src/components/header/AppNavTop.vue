@@ -10,6 +10,7 @@ export default {
 </script>
 
 <template>
+    <div class="sticky top-0 z-10">
     <div class="flex justify-between items-center p-2 bg-background text-white">
         <div class="flex items-center">
       <img src="/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed2486.svg" alt="Logo" class="h-4 ml-5" />
@@ -37,6 +38,7 @@ export default {
         <i class="fa-solid fa-xmark fa-xl mr-4 ml-2 text-gray-300"></i>Remove Frame
         </button>
     </div>
+</div>
 </div>
 </div>
 </template>
