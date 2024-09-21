@@ -62,9 +62,9 @@ export default {
                 type="email"
                 v-model="email"
                 placeholder="Please fill your email"
-                class="pl-4 pr-20 py-2 border border-gray-300"
+                class="pl-6 pr-40 py-3 border border-gray-300"
             />
-            <button class="bg-red-600 text-white px-4 py-2 ml-8 border-b-red-700 border-b-4">
+            <button class="bg-red-600 text-white px-6 py-3 ml-8 border-b-red-700 border-b-4 font-bold">
                 Subscribe
             </button>
         </div>

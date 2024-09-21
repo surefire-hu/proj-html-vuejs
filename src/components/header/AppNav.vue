@@ -17,7 +17,7 @@ export default {
             <img src="/logo.png" alt="Logo" class="h-5 mr-4" />
         </div>
         <div class="flex space-x-6">
-            <a v-for="(link, key) in links" :key="key" :href="link.url" class="text-gray-400 text-sm font-bold" :class="link.class">
+            <a v-for="(link, key) in links" :key="key" :href="link.url" class="text-gray-400 text-sm font-bold hover:text-red-500 hover:border-b-2 hover:border-red-500" :class="link.class">
                 {{ link.text }}
             </a>
             <p class="text-gray-400 text-sm font-bold">I</p>
