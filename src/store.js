@@ -2,7 +2,7 @@ export const links = {
     home: {
         text: 'HOME',
         url: '#',
-        class: 'text-red-500',
+        class: 'text-red-500 border-b-2 border-red-500',
     },
     pages: {
         text: 'PAGES',

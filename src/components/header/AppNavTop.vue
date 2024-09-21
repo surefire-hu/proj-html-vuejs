@@ -10,14 +10,14 @@ export default {
 </script>
 
 <template>
-    <navTop class="flex justify-between items-center p-2 bg-background text-white">
+    <div class="flex justify-between items-center p-2 bg-background text-white">
         <div class="flex items-center">
       <img src="/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed2486.svg" alt="Logo" class="h-4 ml-5" />
     </div>
-    <button @click="buyNow" class="bg-greenBtn hover:bg-Hgreen text-white px-4 py-1 my-1 mr-2 rounded text-sm">
+    <button @click="buyNow" class="border-b-green-900 border-b-2 bg-greenBtn hover:bg-Hgreen text-white px-4 py-1 my-1 mr-2 rounded text-sm">
       Buy Now
     </button>
-    </navTop>
+    </div>
     <hr class="border-0 h-0.5 bg-black">
     <div class="bg-backgroundBottom">
     <div class="w-3/6 mx-auto flex justify-between items-center text-white">
