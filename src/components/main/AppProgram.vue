@@ -1,7 +1,11 @@
 <script>
 import { programs } from '../../store.js';
+import AppMap from './AppMap.vue'
 export default {
         name: 'AppProgram',
+        components:{
+        AppMap,
+        },
     data() {
         return {
             programs,
@@ -36,7 +40,7 @@ export default {
             </div>
             <div v-show="currentIndex === 0" class="program-item flex flex-col h-auto bg-gray-100">
                 <div v-for="(session, index) in programs[0].sessions" :key="index">
-                    <div class="flex mb-2 w-11/12 mx-auto mt-10">
+                    <div class="flex w-11/12 mx-auto mt-10">
                         <div class="w-1/4 flex flex-col">
                             <div class="text-gray-400 font-light">
                                 <p class="pb-6"> <i class="fa-regular fa-clock"></i> {{ session.time }} </p>
@@ -60,7 +64,7 @@ export default {
             </div>
             <div v-show="currentIndex === 1" class="program-item flex flex-col h-auto bg-gray-100">
                 <div v-for="(session, index) in programs[1].sessions" :key="index">
-                    <div class="flex mb-2 border-b w-11/12 mx-auto mt-10">
+                    <div class="flex border-b w-11/12 mx-auto mt-10">
                         <div class="w-1/4 flex flex-col">
                             <div class="text-gray-400 font-light">
                                 <p class="pb-6"> <i class="fa-regular fa-clock"></i> {{ session.time }} </p>
@@ -84,7 +88,7 @@ export default {
             </div>
             <div v-show="currentIndex === 2" class="program-item flex flex-col h-auto bg-gray-100">
                 <div v-for="(session, index) in programs[2].sessions" :key="index">
-                    <div class="flex mb-2 border-b w-11/12 mx-auto mt-10">
+                    <div class="flex border-b w-11/12 mx-auto mt-10">
                         <div class="w-1/4 flex flex-col">
                             <div class="text-gray-400 font-light">
                                 <p class="pb-6"> <i class="fa-regular fa-clock"></i> {{ session.time }} </p>
@@ -108,7 +112,7 @@ export default {
             </div>
             <div v-show="currentIndex === 3" class="program-item flex flex-col h-auto bg-gray-100">
                 <div v-for="(session, index) in programs[3].sessions" :key="index">
-                    <div class="flex mb-2 border-b w-11/12 mx-auto mt-10">
+                    <div class="flex border-b w-11/12 mx-auto mt-10">
                         <div class="w-1/4 flex flex-col">
                             <div class="text-gray-400 font-light">
                                 <p class="pb-6"> <i class="fa-regular fa-clock"></i> {{ session.time }} </p>
@@ -132,7 +136,7 @@ export default {
             </div>
             <div v-show="currentIndex === 4" class="program-item flex flex-col h-auto bg-gray-100">
                 <div v-for="(session, index) in programs[4].sessions" :key="index">
-                    <div class="flex mb-2 border-b w-11/12 mx-auto mt-10">
+                    <div class="flex border-b w-11/12 mx-auto mt-10">
                         <div class="w-1/4 flex flex-col">
                             <div class="text-gray-400 font-light">
                                 <p class="pb-6"> <i class="fa-regular fa-clock"></i> {{ session.time }} </p>
@@ -156,6 +160,7 @@ export default {
             </div>
         </div>
     </div>
+    <AppMap/>
     </div>
 </template>
 
