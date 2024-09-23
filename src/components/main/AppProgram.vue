@@ -1,10 +1,12 @@
 <script>
 import { programs } from '../../store.js';
 import AppMap from './AppMap.vue'
+import AppLocation from './AppLocation.vue'
 export default {
         name: 'AppProgram',
         components:{
         AppMap,
+        AppLocation,
         },
     data() {
         return {
@@ -161,6 +163,7 @@ export default {
         </div>
     </div>
     <AppMap/>
+    <AppLocation/>
     </div>
 </template>
 
