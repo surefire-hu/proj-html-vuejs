@@ -22,12 +22,12 @@ export default {
                     <p class="text-6xl font-extrabold mb-10">SOCIAL NETWORKS</p>
                     <hr class="border-t-2 border-white w-3/12 mx-auto mt-4" />
                     <p class="text-lg font-bold mb-10">23 - 26 MAY 2019 / SAN FRANCISCO / 8 SPEAKERS</p>
-                    <a href="#" class="bg-reds hover:bg-red-600 text-white font-bold py-4 px-8 rounded mt-4">REGISTER ONLINE</a>
+                    <a href="#" class="bg-reds text-white font-bold py-4 px-8 rounded mt-4">REGISTER ONLINE</a>
                 </div>
             </div>
             <div v-show="currentIndex === 1" class="carousel-item">
                 <img src="/2-item-1.jpg" alt="Image 2" class="w-full h-192 object-cover" />
-                <div class="absolute inset-0 flex flex-col ml-192 items-center justify-center text-white text-center">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
                     <p class="text-8xl font-extrabold text-reds mb-4">MEET</p>
                     <p class="text-6xl font-bold">8 FAMOUS SPEAKERS</p>
                     <p class="mt-4 text-lg">With quality of knowledge</p>
@@ -52,13 +52,7 @@ export default {
 </template>
 
 <style scoped>
-.carousel-item {
-    transition: opacity 0.5s ease;
-}
 .h-192 {
     height: 600px;
-}
-.ml-192 {
-    margin-left: 600px;
 }
 </style>
