@@ -27,9 +27,11 @@ export default {
             <div class="program">
                 <div class="flex justify-center mt-20">
                     <div v-for="(program, index) in programs" :key="index" 
-                        @click="currentIndex = index" 
+                        @click="index < programs.length - 1 ? currentIndex = index : null" 
                         class="cursor-pointer w-1/6 h-20 flex flex-col justify-center items-center font-bold text-white border-l border-red-700" 
-                        :class="{'bg-red-700': currentIndex === index, 'bg-reds': currentIndex !== index}">
+                        :class="{'bg-red-700': currentIndex === index, 'bg-reds': currentIndex !== index,
+                            'cursor-default' : index === programs.length - 1
+                        }">
                         <p> {{ program.day }} </p>
                         <p class="text-sm font-normal"> {{ program.date }} </p>
                     </div>
