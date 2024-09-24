@@ -6,6 +6,7 @@ export default {
         return {
             speakers: Object.values(speakers),
             currentIndex: 0,
+            scrollInterval: null,
         };
     },
     computed: {
@@ -24,9 +25,15 @@ export default {
             this.currentIndex -= 1; 
         if (this.currentIndex < 0) {
             this.currentIndex = 4; 
+            }
+        },
+        startAutoScroll() {
+            this.scrollInterval = setInterval(this.nextSpeaker, 3000); 
         }
     },
-},
+    mounted() {
+        this.startAutoScroll();
+    }
 };
 </script>
 
