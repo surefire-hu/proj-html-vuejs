@@ -6,6 +6,7 @@ import AppSpeakers from './AppSpeakers.vue'
 import AppMap from './AppMap.vue'
 import AppLocation from './AppLocation.vue'
 import AppRecent from './AppRecent.vue'
+import AppTicket from './AppTicket.vue'
 export default {
     name: 'Main',
     components: {
@@ -16,6 +17,7 @@ export default {
         AppRecent,
         AppMap,
         AppLocation,
+        AppTicket,
     }
 };
 </script>
@@ -28,6 +30,7 @@ export default {
     <AppMap/>
     <AppLocation/>
     <AppRecent/>
+    <AppTicket/>
 </template>
 
 <style>

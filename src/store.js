@@ -505,3 +505,74 @@ export const recents= [
         overview:'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....',
     },
 ];
+
+export const tickets= [
+    {
+        title:'ONE DAY PASS',
+        price:'FREE',
+        book:'BOOK NOW',
+        contents: [
+            {
+                access:'One Day Access',
+            },
+            {
+                access:'Coffee Break',
+            },
+            {
+                access:'Lunch(International Buffet)',
+            },
+            {
+                access:'Document Sheets',
+            },
+            {
+                access:'50USD Voucher For Next Event',
+            },
+        ],
+    },
+    {
+        title:'FOUR DAY PASSES',
+        price:'750.00 USD',
+        featured:'Freatured!',
+        class:'px-10 py-1',
+        book:'BOOK NOW',
+        contents: [
+            {
+                access:'Four Day Access',
+            },
+            {
+                access:'Coffee Break',
+            },
+            {
+                access:'Lunch(International Buffet)',
+            },
+            {
+                access:'Document Sheets',
+            },
+            {
+                access:'100USD Voucher For Next Event',
+            },
+        ],
+    },
+    {
+        title:'TWO DAY PASSES',
+        price:'580.00 USD',
+        book:'BOOK NOW',
+        contents: [
+            {
+                access:'Two Day Access',
+            },
+            {
+                access:'Coffee Break',
+            },
+            {
+                access:'Lunch(International Buffet)',
+            },
+            {
+                access:'Document Sheets',
+            },
+            {
+                access:'700USD Voucher For Next Event',
+            },
+        ],
+    },
+]
