@@ -20,8 +20,11 @@ export default {
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
                     <p class="text-4xl mb-10">CONFERENCE ON</p>
                     <p class="text-6xl font-extrabold mb-10">SOCIAL NETWORKS</p>
-                    <hr class="border-t-2 border-white w-3/12 mx-auto mt-4" />
-                    <p class="text-lg font-bold mb-10">23 - 26 MAY 2019 / SAN FRANCISCO / 8 SPEAKERS</p>
+                    <div>
+                        <hr class="border-t-2 border-whit mt-4" />
+                        <p class="text-lg font-bold mb-10">23 - 26 MAY 2019 / SAN FRANCISCO / 8 SPEAKERS</p>
+                    </div>
+                    
                     <a href="#" class="bg-reds text-white font-bold py-4 px-8 rounded mt-4">REGISTER ONLINE</a>
                 </div>
             </div>

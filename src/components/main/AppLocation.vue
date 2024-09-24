@@ -12,11 +12,11 @@ export default {
             <span class="text-sm font-light text-gray-300"><i class="fa-solid fa-location-arrow"></i>11 GD Building, River Mall, New york, USA 8879</span>
         </div>
         <p class="text-reds mb-10">Check For Accommodations Here</p>
-        <div class="w-1/4">
+        <div>
             <hr>
-            <div class="flex justify-between">
-                <span class=" font-medium"><i class="fa-solid fa-phone pr-4"></i>+1-112-222-3344</span>
-                <span class="font-medium"><i class="fa-solid fa-envelope pr-4"></i>Contact@TheKeynoteTheme.com</span>
+            <div class="flex justify-between gap-4">
+                <span class=" font-medium"><i class="fa-solid fa-phone pr-2"></i>+1-112-222-3344</span>
+                <span class="font-medium"><i class="fa-solid fa-envelope pr-2"></i>Contact@TheKeynoteTheme.com</span>
             </div>
         </div>
     </div>
