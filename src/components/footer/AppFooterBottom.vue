@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div class="h-16 bg-button flex items-center">
-        <div class="w-2/3 flex justify-between mx-auto text-gray-400">
+        <div class="w-2/3 flex justify-between mx-auto text-gray-400 text-sm">
             <p>© Copyright GoodLayers, All Right Reserved</p>
             <div>
                 <a href="#" class="cursor-pointer hover:text-white"> About Us </a>| 
