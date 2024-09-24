@@ -24,8 +24,8 @@ export default {
                 </div>
                 <span class="text-gray-300 my-4">{{ recent.date }}</span>
                 <h2 class="font-bold text-2xl mb-8">{{ recent.title }}</h2>
-                <p class="text-gray-400 mb-8">{{ recent.overview }}</p>
-                <span class="text-reds font-serif">Read More</span>
+                <p class="text-gray-400 mb-4">{{ recent.overview }}</p>
+                <em class="text-reds font-serif">Read More</em>
             </div>
         </div>
     </div>

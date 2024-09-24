@@ -576,3 +576,22 @@ export const tickets= [
         ],
     },
 ]
+
+export const accordions= [
+    { 
+        title: 'Question 1', 
+        content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.' 
+    },
+    { 
+        title: 'Question 2', 
+        content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.' 
+    },
+    { 
+        title: 'Question 3', 
+        content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.' 
+    },
+    { 
+        title: 'Question 4', 
+        content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.' 
+    },
+]

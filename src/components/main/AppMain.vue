@@ -7,6 +7,7 @@ import AppMap from './AppMap.vue'
 import AppLocation from './AppLocation.vue'
 import AppRecent from './AppRecent.vue'
 import AppTicket from './AppTicket.vue'
+import AppFaq from './AppFaq.vue'
 export default {
     name: 'Main',
     components: {
@@ -18,6 +19,7 @@ export default {
         AppMap,
         AppLocation,
         AppTicket,
+        AppFaq,
     }
 };
 </script>
@@ -31,6 +33,7 @@ export default {
     <AppLocation/>
     <AppRecent/>
     <AppTicket/>
+    <AppFaq/>
 </template>
 
 <style>
