@@ -13,7 +13,6 @@ export const links = [
         text: 'PROGRAM',
         url: '#',
         class: '',
-        class: '',
     },
     {
         text: 'TICKETS',
