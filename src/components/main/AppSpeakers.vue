@@ -43,7 +43,7 @@ export default {
             <div class="mt-10 flex justify-between">
                 <div v-for="(speaker, index) in displayedSpeakers" :key="index" class="speaker-card">
                     <div class="relative">
-                        <img :src="speaker.image" alt="speaker.image" class=" rounded w-72" />
+                        <img :src="speaker.image" alt="speaker image" class=" rounded w-72" />
                         <div class="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-80 bg-reds">
                             <i class="fa-brands fa-twitter text-xl mx-2 text-white cursor-pointer"></i>
                             <i class="fa-brands fa-facebook text-xl mx-2 text-white cursor-pointer"></i>

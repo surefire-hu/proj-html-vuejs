@@ -119,6 +119,9 @@ export const programs = [
         date: '23 May 2016',
         sessions: [
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 description: 'Welcoming and Introduction',
                 overview: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur....",
                 time: '09:00 - 10:30',
@@ -137,6 +140,9 @@ export const programs = [
         date: '23 May 2030',
         sessions: [
             {
+                class: 'fa-regular fa-clock',
+                aclass:'fa-solid fa-location-arrow',
+                oclass:'text-gray-600',
                 description: 'Gathering demand information',
                 overview: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur....",
                 time: '10:30 - 12:00',
@@ -153,6 +159,21 @@ export const programs = [
                 ],
             },
             {
+                
+                opclass: 'fa-regular fa-clock text-reds',
+                iclass:'text-gray-600 font-bold',
+                description: ' 12:00 - 13:00',
+                overview: "INTERMISSION & LUNCH BREAK",
+                oclass:'font-bold text-2xl',
+                time: '',
+                room: '',
+                speakers: [
+                ],
+            },
+            {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '13:00 - 14:30',
                 room: 'ROOM C',
                 description: 'Setting up your business plan',
@@ -169,6 +190,9 @@ export const programs = [
                 ],
             },
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '14:30 - 16:00',
                 room: 'ROOM C',
                 description: 'Finding Supplier',
@@ -187,6 +211,9 @@ export const programs = [
         date: '24 May 2030',
         sessions: [
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 description: 'Dealing With Supplier',
                 overview: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur....",
                 time: '9:00 - 10:30',
@@ -207,6 +234,9 @@ export const programs = [
                 ],
             },
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '9:00 - 10:30',
                 room: 'ROOM D',
                 description: 'Marketing Theory',
@@ -223,6 +253,9 @@ export const programs = [
                 ],
             },
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '10:30 - 12:00',
                 room: 'ROOM B',
                 description: 'What to do before start creating product',
@@ -238,7 +271,23 @@ export const programs = [
                     },
                 ],
             },
+            
             {
+                
+                opclass: 'fa-regular fa-clock text-reds',
+                iclass:'text-gray-600 font-bold',
+                description: ' 12:00 - 13:00',
+                overview: "INTERMISSION & LUNCH BREAK",
+                oclass:'font-bold text-2xl',
+                time: '',
+                room: '',
+                speakers: [
+                ],
+            },
+            {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '13:00 - 14:30',
                 room: 'ROOM C',
                 description: 'Creating Productivity 1',
@@ -255,6 +304,9 @@ export const programs = [
                 ],
             },
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '14:30 - 16:00',
                 room: 'ROOM C',
                 description: 'Creating Productivity 1',
@@ -277,6 +329,9 @@ export const programs = [
         date: '25 May 2030',
         sessions: [
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 description: 'Product Lines',
                 overview: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur....",
                 time: '10:00 - 12:00',
@@ -293,6 +348,21 @@ export const programs = [
                 ],
             },
             {
+                
+                opclass: 'fa-regular fa-clock text-reds',
+                iclass:'text-gray-600 font-bold',
+                description: ' 12:00 - 13:00',
+                overview: "INTERMISSION & LUNCH BREAK",
+                oclass:'font-bold text-2xl',
+                time: '',
+                room: '',
+                speakers: [
+                ],
+            },
+            {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '13:00 - 14:30',
                 room: 'ROOM D',
                 description: 'Quality Control',
@@ -305,6 +375,9 @@ export const programs = [
                 ],
             },
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '14:30 - 16:00',
                 room: 'ROOM D',
                 description: 'Furnishing Process',
@@ -323,6 +396,9 @@ export const programs = [
         date: '26 May 2030',
         sessions: [
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 description: 'Product presentation',
                 overview: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur....",
                 time: '09:00 - 10:30',
@@ -339,6 +415,9 @@ export const programs = [
                 ],
             },
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '10:30 - 12:00',
                 room: 'ROOM C',
                 description: 'Marketing your product',
@@ -351,6 +430,21 @@ export const programs = [
                 ],
             },
             {
+                
+                opclass: 'fa-regular fa-clock text-reds',
+                iclass:'text-gray-600 font-bold',
+                description: ' 12:00 - 13:00',
+                overview: "INTERMISSION & LUNCH BREAK",
+                oclass:'font-bold text-2xl',
+                time: '',
+                room: '',
+                speakers: [
+                ],
+            },
+            {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '13:00 - 14:30',
                 room: 'ROOM C',
                 description: 'Social media can help',
@@ -367,6 +461,9 @@ export const programs = [
                 ],
             },
             {
+                class: 'fa-regular fa-clock',
+                oclass:'text-gray-600',
+                aclass:'fa-solid fa-location-arrow',
                 time: '14:30 - 16:00',
                 room: 'ROOM A',
                 description: 'Ending session',
@@ -382,5 +479,29 @@ export const programs = [
     },
     {
 
+    },
+];
+
+export const recents= [
+    {
+        image:'photodune-7770665-two-white-coffee-mug-with-diy-decoration-o.jpg',
+        sticky:'absolute bottom-0 right-0 p-2 bg-gray-800 text-white text-sm',
+        stuckyPhone:'fa-solid fa-bullhorn',
+        stickyText:' STICKY POST',
+        date:'03 Dec 2013  /  0 Comments',
+        title:'SEDIAL EIUSMOD TEMPOR',
+        overview:'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....',
+    },
+    {
+        image:'photodune-8797753-multiethnic-people-with-startup-business-t.jpg',
+        date:'03 Dec 2013  /  2 Comments',
+        title:'DONEC LUCTUS IMPERDIET',
+        overview:'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....',
+    },
+    {
+        image:'photodune-8522811-speaker-at-business-conference-and-present.jpg',
+        date:'03 Dec 2013  /  2 Comments',
+        title:'MAGNA PARS STUDIORUM',
+        overview:'Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....',
     },
 ];
