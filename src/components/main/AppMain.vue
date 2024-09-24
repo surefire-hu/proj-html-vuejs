@@ -8,6 +8,7 @@ import AppLocation from './AppLocation.vue'
 import AppRecent from './AppRecent.vue'
 import AppTicket from './AppTicket.vue'
 import AppFaq from './AppFaq.vue'
+import AppSponsor from './AppSponsor.vue'
 export default {
     name: 'Main',
     components: {
@@ -20,6 +21,7 @@ export default {
         AppLocation,
         AppTicket,
         AppFaq,
+        AppSponsor,
     }
 };
 </script>
@@ -34,6 +36,7 @@ export default {
     <AppRecent/>
     <AppTicket/>
     <AppFaq/>
+    <AppSponsor/>
 </template>
 
 <style>

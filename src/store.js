@@ -595,3 +595,30 @@ export const accordions= [
         content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.' 
     },
 ]
+
+export const sponsors= [
+    { 
+        image: 'banner-1.jpg', 
+        content: 'drofer' 
+    },
+    { 
+        image: 'banner-2.jpg', 
+        content: 'link sys' 
+    },
+    { 
+        image: 'banner-3.jpg', 
+        content: 'pointer co' 
+    },
+    { 
+        image: 'banner-4.jpg', 
+        content: 'max star' 
+    },
+    { 
+        image: 'banner-5.jpg', 
+        content: 'globe care' 
+    },
+    { 
+        image: 'banner-6.jpg', 
+        content: 'the shield' 
+    },
+]
