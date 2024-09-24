@@ -11,9 +11,9 @@ export default {
 </script>
 
 <template>
-<div class="h-192 bground text-center flex flex-col mt-14">
-    <h2 class="font-bold text-4xl text-white mt-14">TICKETS</h2>
-    <div class="h-192 flex gap-8 justify-center items-center">
+<div class=" bground text-center flex flex-col mt-14">
+    <h2 class="font-bold text-4xl text-white mt-14 pb-10">TICKETS</h2>
+    <div class=" flex gap-8 justify-center items-center pb-8">
         <div v-for="(ticket,index) in tickets" :key="index">
             <div class="bg-gray-200 relative overflow-hidden">
                 <h3 class="font-bold text-xl pt-8 width">{{ ticket.title }}</h3>
@@ -34,8 +34,5 @@ export default {
 <style scoped>
 .bground {
     background-image: url("/ticket-bg.jpg");
-}
-.h-192 {
-    height: 70vh;
 }
 </style>
