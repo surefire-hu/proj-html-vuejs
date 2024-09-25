@@ -1,5 +1,6 @@
 <script>
 import { programs } from '../../store.js';
+import 'animate.css';
 export default {
         name: 'AppProgram',
     data() {
@@ -36,7 +37,7 @@ export default {
                         <p class="text-sm font-normal"> {{ program.date }} </p>
                     </div>
                 </div>
-                <div v-show="currentIndex === 0" class="program-item flex flex-col h-auto bg-gray-100">
+                <div v-show="currentIndex === 0" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
                     <div v-for="(session, index) in programs[0].sessions" :key="index">
                         <div class="flex w-11/12 mx-auto mt-10">
                             <div class="w-1/4 flex flex-col">
@@ -60,7 +61,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div v-show="currentIndex === 1" class="program-item flex flex-col h-auto bg-gray-100">
+                <div v-show="currentIndex === 1" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
                     <div v-for="(session, index) in programs[1].sessions" :key="index">
                         <div class="flex border-b w-11/12 mx-auto mt-10">
                             <div class="w-1/4 flex flex-col">
@@ -84,7 +85,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div v-show="currentIndex === 2" class="program-item flex flex-col h-auto bg-gray-100">
+                <div v-show="currentIndex === 2" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
                     <div v-for="(session, index) in programs[2].sessions" :key="index">
                         <div class="flex border-b w-11/12 mx-auto mt-10">
                             <div class="w-1/4 flex flex-col">
@@ -108,7 +109,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div v-show="currentIndex === 3" class="program-item flex flex-col h-auto bg-gray-100">
+                <div v-show="currentIndex === 3" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
                     <div v-for="(session, index) in programs[3].sessions" :key="index">
                         <div class="flex border-b w-11/12 mx-auto mt-10">
                             <div class="w-1/4 flex flex-col">
@@ -132,7 +133,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div v-show="currentIndex === 4" class="program-item flex flex-col h-auto bg-gray-100">
+                <div v-show="currentIndex === 4" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
                     <div v-for="(session, index) in programs[4].sessions" :key="index">
                         <div class="flex border-b w-11/12 mx-auto mt-10">
                             <div class="w-1/4 flex flex-col">

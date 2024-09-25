@@ -1,10 +1,10 @@
 export const jumbos = [
     {
         position:'absolute inset-0 flex flex-col items-center justify-center text-white text-center ',
-        button:'bg-reds text-white font-bold py-4 px-8 rounded mt-4',
-        date:'text-lg font-bold mb-10',
-        social:'text-6xl font-extrabold mb-10',
-        meet:'text-4xl mb-10',
+        button:'bg-reds text-white font-bold py-4 px-8 rounded mt-4 animate__animated animate__fadeInUpBig animate__delay-5s',
+        date:'text-lg font-bold mb-10 animate__animated animate__zoomIn animate__delay-4s',
+        social:'text-6xl font-extrabold mb-10 animate__animated animate__zoomIn animate__delay-2s',
+        meet:'text-4xl mb-10 animate__animated animate__fadeInDown animate__delay-1s',
         src: '/slider-1-bg.jpg',
         alt: 'Image 1',
         title: 'CONFERENCE ON',
@@ -16,10 +16,10 @@ export const jumbos = [
     },
     {
         position:'absolute inset-0 flex flex-col items-center justify-center text-white text-center ml-96',
-        button:'bg-buttonB text-white font-bold py-3 px-6 rounded mt-4',
-        date:'mt-4 text-lg',
-        social:'text-6xl font-bold',
-        meet:'text-8xl font-extrabold text-reds mb-4',
+        button:'bg-buttonB text-white font-bold py-3 px-6 rounded mt-4 animate__animated animate__fadeInUp animate__delay-4s',
+        date:'mt-4 text-lg animate__animated animate__fadeIn animate__delay-3s',
+        social:'text-6xl font-bold animate__animated animate__fadeIn animate__delay-2s',
+        meet:'text-8xl font-extrabold text-reds mb-4 animate__animated animate__flip animate__delay-1s',
         src: '/2-item-1.jpg',
         alt: 'Image 2',
         title: 'MEET',
@@ -30,7 +30,7 @@ export const jumbos = [
     },
     {
         position:'absolute inset-0 flex flex-col items-center justify-center text-white text-center ',
-        meet:'text-6xl font-bold',
+        meet:'text-6xl font-bold animate__animated animate__fadeIn animate__delay-2s',
         src: '/coutdown-bg1.jpg',
         alt: 'Image 3',
         title: 'SUPPORT VIDEO BACKGROUND',

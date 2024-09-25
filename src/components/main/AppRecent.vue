@@ -1,5 +1,6 @@
 <script>
 import { recents } from '../../store.js';
+import 'animate.css';
 export default {
     name: 'AppRecent',
     data() {
@@ -17,7 +18,7 @@ export default {
             <em class="text-reds my-10 font-serif">Read All News</em>
         </div>
         <div class="flex gap-8">
-            <div v-for="(recent,index) in recents" :key="index" class="w-1/3">
+            <div v-for="(recent,index) in recents" :key="index" class="w-1/3 animate__animated animate__fadeInUp animate__delay-5s">
                 <div class="relative my-4">
                     <img :src="recent.image" alt="image" class="w-full"> 
                     <span :class="recent.sticky"><i :class="recent.stickyPhone"></i> {{ recent.stickyText }}</span>

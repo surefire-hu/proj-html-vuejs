@@ -1,45 +1,50 @@
 <script>
 import { speakers } from '../../store.js';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
 export default {
     name: 'AppSpeaker',
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
     data() {
         return {
             speakers: Object.values(speakers),
-            currentIndex: 0,
-            scrollInterval: null,
+            swiper: null,
         };
-    },
-    computed: {
-        displayedSpeakers() {
-            return this.speakers.slice(this.currentIndex, this.currentIndex + 4);
-        },
     },
     methods: {
         nextSpeaker() {
-            this.currentIndex += 1;
-            if (this.currentIndex >= 5) {
-            this.currentIndex = 0; 
+            if (this.swiper) {
+                const isLastSlide = this.swiper.isEnd;
+                if (isLastSlide) {
+                    this.swiper.slideTo(0); 
+                } else {
+                    this.swiper.slideNext(); 
+                }
             }
         },
         prevSpeaker() {
-            this.currentIndex -= 1; 
-        if (this.currentIndex < 0) {
-            this.currentIndex = 4; 
+            if (this.swiper) {
+                const isFirstSlide = this.swiper.isBeginning; 
+                if (isFirstSlide) {
+                    this.swiper.slideTo(this.speakers.length - 1); 
+                } else {
+                    this.swiper.slidePrev(); 
+                }
             }
         },
-        startAutoScroll() {
-            this.scrollInterval = setInterval(this.nextSpeaker, 3000); 
-        }
+        onSwiper(swiper) {
+            this.swiper = swiper; 
+        },
     },
-    mounted() {
-        this.startAutoScroll();
-    }
 };
 </script>
 
 <template>
     <div class="h-192">
-        <div class=" w-2/3 mx-auto">
+        <div class="w-2/3 mx-auto">
             <div class="flex justify-between pt-20">
                 <h2 class="font-bold text-5xl text-gray-800">SPEAKERS</h2>
                 <div class="flex gap-2">
@@ -47,23 +52,31 @@ export default {
                     <i @click="nextSpeaker" class="fa-solid fa-chevron-right cube bg-reds text-white flex justify-center items-center cursor-pointer"></i>
                 </div>
             </div>
-            <div class="mt-10 flex justify-between">
-                <div v-for="(speaker, index) in displayedSpeakers" :key="index" class="speaker-card">
-                    <div class="relative">
-                        <img :src="speaker.image" alt="speaker image" class=" rounded w-72" />
-                        <div class="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-80 bg-reds">
-                            <i class="fa-brands fa-twitter text-xl mx-2 text-white cursor-pointer"></i>
-                            <i class="fa-brands fa-facebook text-xl mx-2 text-white cursor-pointer"></i>
-                            <i class="fa-brands fa-linkedin text-xl mx-2 text-white cursor-pointer"></i>
+            <div class="mt-10">
+                <swiper 
+                    :slides-per-view="4" 
+                    :space-between="30"
+                    :autoplay="{ 
+                    delay: 2000, 
+                    disableOnInteraction: false }" 
+                    @swiper="onSwiper"
+                >
+                    <swiper-slide v-for="(speaker, index) in speakers" :key="index" class="speaker-card">
+                        <div class="relative">
+                            <img :src="speaker.image" alt="speaker image" class="rounded w-72" />
+                            <div class="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-80 bg-reds">
+                                <i class="fa-brands fa-twitter text-xl mx-2 text-white cursor-pointer"></i>
+                                <i class="fa-brands fa-facebook text-xl mx-2 text-white cursor-pointer"></i>
+                                <i class="fa-brands fa-linkedin text-xl mx-2 text-white cursor-pointer"></i>
+                            </div>
                         </div>
-                    </div>
-                    <h3 class="text-xl font-semibold text-center my-4">{{ speaker.name }} {{ speaker.surname }}</h3>
-                    <em class=" text-gray-500 text-sm text-center block">{{ speaker.overview }}</em>
-                </div>
+                        <h3 class="text-xl font-semibold text-center my-4">{{ speaker.name }} {{ speaker.surname }}</h3>
+                        <em class="text-gray-500 text-sm text-center block">{{ speaker.overview }}</em>
+                    </swiper-slide>
+                </swiper>
             </div>
         </div>
     </div>
-
 </template>
 
 <style scoped>

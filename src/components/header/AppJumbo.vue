@@ -1,4 +1,5 @@
 <script>
+import 'animate.css';
 import { jumbos } from '../../store.js';
 
 export default {
@@ -13,13 +14,13 @@ export default {
 <template>
     <div class="relative">
         <div class="carousel">
-            <div v-for="(jumbo, index) in jumbos" :key="index" v-show="currentIndex === index" class="carousel-item">
+            <div v-for="(jumbo, index) in jumbos" :key="index" v-show="currentIndex === index" class="carousel-item animate__animated animate__fadeInRight">
                 <div :style="{ backgroundImage: `url(${jumbo.src})` }" :alt="jumbo.alt" class="w-full h-192 bg-cover">
                     <div :class="jumbo.position">
                         <p :class="jumbo.meet">{{ jumbo.title }}</p>
                         <p :class="jumbo.social">{{ jumbo.subtitle }}</p>
                         <div v-if="jumbo.details">
-                            <hr v-if="jumbo.hr" class="border-t-2 border-white mt-4" />
+                            <hr v-if="jumbo.hr" class="border-t-2 border-white mt-4 animate__animated animate__zoomIn animate__delay-3s" />
                             <p :class="jumbo.date">{{ jumbo.details }}</p>
                         </div>
                         <a v-if="jumbo.buttonText" :href="jumbo.buttonLink" :class="jumbo.button">{{ jumbo.buttonText }}</a>
@@ -42,5 +43,8 @@ export default {
 }
 .ml-192 {
     margin-left: 600px;
+}
+.my-element {
+  --animate-duration: 3s;
 }
 </style>
