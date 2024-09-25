@@ -1,13 +1,11 @@
 <script>
+import { jumbos } from '../../store.js';
+
 export default {
     data() {
         return {
+            jumbos,
             currentIndex: 0,
-            images: [
-                "1",
-                "2",
-                "3",
-            ],
         };
     },
 };
@@ -15,38 +13,22 @@ export default {
 <template>
     <div class="relative">
         <div class="carousel">
-            <div v-show="currentIndex === 0" class="carousel-item">
-                <img src="/slider-1-bg.jpg" alt="Image 1" class="w-full h-192 object-cover" />
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                    <p class="text-4xl mb-10">CONFERENCE ON</p>
-                    <p class="text-6xl font-extrabold mb-10">SOCIAL NETWORKS</p>
-                    <div>
-                        <hr class="border-t-2 border-whit mt-4" />
-                        <p class="text-lg font-bold mb-10">23 - 26 MAY 2019 / SAN FRANCISCO / 8 SPEAKERS</p>
+            <div v-for="(jumbo, index) in jumbos" :key="index" v-show="currentIndex === index" class="carousel-item">
+                <div :style="{ backgroundImage: `url(${jumbo.src})` }" :alt="jumbo.alt" class="w-full h-192 bg-cover">
+                    <div :class="jumbo.position">
+                        <p :class="jumbo.meet">{{ jumbo.title }}</p>
+                        <p :class="jumbo.social">{{ jumbo.subtitle }}</p>
+                        <div v-if="jumbo.details">
+                            <hr v-if="jumbo.hr" class="border-t-2 border-white mt-4" />
+                            <p :class="jumbo.date">{{ jumbo.details }}</p>
+                        </div>
+                        <a v-if="jumbo.buttonText" :href="jumbo.buttonLink" :class="jumbo.button">{{ jumbo.buttonText }}</a>
                     </div>
-                    
-                    <a href="#" class="bg-reds text-white font-bold py-4 px-8 rounded mt-4">REGISTER ONLINE</a>
-                </div>
-            </div>
-            <div v-show="currentIndex === 1" class="carousel-item">
-                <img src="/2-item-1.jpg" alt="Image 2" class="w-full h-192 object-cover" />
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                    <p class="text-8xl font-extrabold text-reds mb-4">MEET</p>
-                    <p class="text-6xl font-bold">8 FAMOUS SPEAKERS</p>
-                    <p class="mt-4 text-lg">With quality of knowledge</p>
-                    <a href="#" class="bg-buttonB text-white font-bold py-3 px-6 rounded mt-4">MEET SPEAKERS</a>
-                </div>
-            </div>
-            <div v-show="currentIndex === 2" class="carousel-item">
-                <img src="/coutdown-bg1.jpg" alt="Image 3" class="w-full h-192 object-cover" />
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                    <p class="text-6xl font-bold">SUPPORT VIDEO BACKGROUND</p>
-                    
                 </div>
             </div>
         </div>
         <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            <span v-for="(item, index) in images" :key="index" 
+            <span v-for="(item, index) in jumbos" :key="index" 
                   @click="currentIndex = index" 
                   class="cursor-pointer w-3 h-3 rounded-full" 
                   :class="{'bg-white': currentIndex === index, 'bg-gray-500': currentIndex !== index}"></span>
@@ -57,5 +39,8 @@ export default {
 <style scoped>
 .h-192 {
     height: 600px;
+}
+.ml-192 {
+    margin-left: 600px;
 }
 </style>

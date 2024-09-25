@@ -1,3 +1,46 @@
+export const jumbos = [
+    {
+        position:'absolute inset-0 flex flex-col items-center justify-center text-white text-center ',
+        button:'bg-reds text-white font-bold py-4 px-8 rounded mt-4',
+        date:'text-lg font-bold mb-10',
+        social:'text-6xl font-extrabold mb-10',
+        meet:'text-4xl mb-10',
+        src: '/slider-1-bg.jpg',
+        alt: 'Image 1',
+        title: 'CONFERENCE ON',
+        subtitle: 'SOCIAL NETWORKS',
+        details: '23 - 26 MAY 2019 / SAN FRANCISCO / 8 SPEAKERS',
+        buttonText: 'REGISTER ONLINE',
+        buttonLink: '#',
+        hr:'1',
+    },
+    {
+        position:'absolute inset-0 flex flex-col items-center justify-center text-white text-center ml-96',
+        button:'bg-buttonB text-white font-bold py-3 px-6 rounded mt-4',
+        date:'mt-4 text-lg',
+        social:'text-6xl font-bold',
+        meet:'text-8xl font-extrabold text-reds mb-4',
+        src: '/2-item-1.jpg',
+        alt: 'Image 2',
+        title: 'MEET',
+        subtitle: '8 FAMOUS SPEAKERS',
+        details: 'With quality of knowledge',
+        buttonText: 'MEET SPEAKERS',
+        buttonLink: '#',
+    },
+    {
+        position:'absolute inset-0 flex flex-col items-center justify-center text-white text-center ',
+        meet:'text-6xl font-bold',
+        src: '/coutdown-bg1.jpg',
+        alt: 'Image 3',
+        title: 'SUPPORT VIDEO BACKGROUND',
+        subtitle: '',
+        details: '',
+        buttonText: '',
+        buttonLink: '',
+    },
+];
+
 export const links = [
     {
         text: 'HOME',
