@@ -13,7 +13,7 @@ export default {
 <template>
     <div class="bg-background flex items-center justify-center pb-20">
         <div class="w-2/3 mx-auto flex pt-10">
-            <div class="pr-20">
+            <div class="pr-20 w-1/4">
                 <h4 class="my-8 text-white font-bold">ABOUT US</h4>
                 <p class="text-gray-300 text-xs">
                     Cum sociis natoque penatibus et <br>
@@ -29,7 +29,7 @@ export default {
                     <i class="fa-brands fa-flickr"></i>
                 </div>
             </div>
-            <div class="pr-20">
+            <div class="pr-20 w-1/4">
                 <h4 class="my-8 text-white font-bold">RECENT NEWS</h4>
                 <ul class="font-extralight my-8 gap-2 cursor-pointer">
                     <li class="flex">
@@ -54,7 +54,7 @@ export default {
                     </li>
                 </ul>
             </div>
-            <div class="pr-20">
+            <div class="pr-20 w-1/4">
                 <h4 class="my-8 text-white font-bold">GET YOUR START!</h4>
                 <p class="text-gray-300 text-xs">
                     Book for your seat before it's too rate. <br>
@@ -64,10 +64,10 @@ export default {
                     CHECK OUT TICKETS!
                 </button>
             </div>
-            <div class="pr-20">
+            <div class="w-1/4">
                 <h4 class="my-8 text-white font-bold">GALLERY FROM LAST YEAR</h4>
                 <div class="grid grid-cols-4 gap-2">
-                    <img v-for="(image,index) in footer" :src="image.image" class="w-14">
+                    <img v-for="(image,index) in footer" :src="image.image">
                 </div>
             </div>
         </div>
