@@ -37,32 +37,8 @@ export default {
                         <p class="text-sm font-normal"> {{ program.date }} </p>
                     </div>
                 </div>
-                <div v-show="currentIndex === 0" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
-                    <div v-for="(session, index) in programs[0].sessions" :key="index">
-                        <div class="flex w-11/12 mx-auto mt-10">
-                            <div class="w-1/4 flex flex-col">
-                                <div class="text-gray-400 font-light">
-                                    <p class="pb-6"> <i :class="session.class"></i> {{ session.time }} </p>
-                                    <p class="pb-6"> <i :class="session.aclass"></i> {{ session.room }} </p> 
-                                    <p class="pb-1 text-reds" v-for="(speaker, idx) in session.speakers" :key="idx"> <i class="fa-solid fa-user text-gray-400"></i> {{ speaker.name }} </p>
-                                </div> 
-                            </div>
-                            <div class="w-3/4 flex-col flex gap-4">
-                                    <p class="font-semibold uppercase text-2xl text-gray-600" :class="session.oclass">
-                                        {{ session.description }}
-                                    </p>
-                                    <p class="text-gray-400" :class="session.iclass">
-                                        {{ session.overview }}
-                                    </p>
-                                <div class="flex">
-                                    <img v-for="(speaker, idx) in session.speakers" :key="idx" :src="speaker.image" :alt="speaker.image" class="w-10 h-10 rounded mr-2 mb-6">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div v-show="currentIndex === 1" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
-                    <div v-for="(session, index) in programs[1].sessions" :key="index">
+                <div v-for="(program, programIndex) in programs" :key="programIndex" v-show="currentIndex === programIndex" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
+                    <div v-for="(session, sessionIndex) in program.sessions" :key="sessionIndex">
                         <div class="flex border-b w-11/12 mx-auto mt-10">
                             <div class="w-1/4 flex flex-col">
                                 <div class="text-gray-400 font-light">
@@ -72,84 +48,12 @@ export default {
                                 </div> 
                             </div>
                             <div class="w-3/4 flex-col flex gap-4">
-                                    <p class="font-semibold uppercase text-2xl" :class="session.opclass">
-                                        {{ session.description }}
-                                    </p>
-                                    <p class="text-gray-400" :class="session.iclass">
-                                        {{ session.overview }}
-                                    </p>
-                                <div class="flex">
-                                    <img v-for="(speaker, idx) in session.speakers" :key="idx" :src="speaker.image" :alt="speaker.image" class="w-10 h-10 rounded mr-2 mb-6">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div v-show="currentIndex === 2" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
-                    <div v-for="(session, index) in programs[2].sessions" :key="index">
-                        <div class="flex border-b w-11/12 mx-auto mt-10">
-                            <div class="w-1/4 flex flex-col">
-                                <div class="text-gray-400 font-light">
-                                    <p class="pb-6"> <i :class="session.class"></i> {{ session.time }} </p>
-                                    <p class="pb-6"> <i :class="session.aclass"></i> {{ session.room }} </p> 
-                                    <p class="pb-1 text-reds" v-for="(speaker, idx) in session.speakers" :key="idx"> <i class="fa-solid fa-user text-gray-400"></i> {{ speaker.name }} </p>
-                                </div> 
-                            </div>
-                            <div class="w-3/4 flex-col flex gap-4">
-                                    <p class="font-semibold uppercase text-2xl" :class="session.opclass">
-                                        {{ session.description }}
-                                    </p>
-                                    <p class="text-gray-400" :class="session.iclass">
-                                        {{ session.overview }}
-                                    </p>
-                                <div class="flex">
-                                    <img v-for="(speaker, idx) in session.speakers" :key="idx" :src="speaker.image" :alt="speaker.image" class="w-10 h-10 rounded mr-2 mb-6">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div v-show="currentIndex === 3" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
-                    <div v-for="(session, index) in programs[3].sessions" :key="index">
-                        <div class="flex border-b w-11/12 mx-auto mt-10">
-                            <div class="w-1/4 flex flex-col">
-                                <div class="text-gray-400 font-light">
-                                    <p class="pb-6"> <i :class="session.class"></i> {{ session.time }} </p>
-                                    <p class="pb-6"> <i :class="session.aclass"></i> {{ session.room }} </p> 
-                                    <p class="pb-1 text-reds" v-for="(speaker, idx) in session.speakers" :key="idx"> <i class="fa-solid fa-user text-gray-400"></i> {{ speaker.name }} </p>
-                                </div> 
-                            </div>
-                            <div class="w-3/4 flex-col flex gap-4">
-                                    <p class="font-semibold uppercase text-2xl" :class="session.opclass">
-                                        {{ session.description }}
-                                    </p>
-                                    <p class="text-gray-400" :class="session.iclass">
-                                        {{ session.overview }}
-                                    </p>
-                                <div class="flex">
-                                    <img v-for="(speaker, idx) in session.speakers" :key="idx" :src="speaker.image" :alt="speaker.image" class="w-10 h-10 rounded mr-2 mb-6">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div v-show="currentIndex === 4" class="program-item flex flex-col h-auto bg-gray-100 animate__animated animate__fadeIn">
-                    <div v-for="(session, index) in programs[4].sessions" :key="index">
-                        <div class="flex border-b w-11/12 mx-auto mt-10">
-                            <div class="w-1/4 flex flex-col">
-                                <div class="text-gray-400 font-light">
-                                    <p class="pb-6"> <i :class="session.class"></i> {{ session.time }} </p>
-                                    <p class="pb-6"> <i :class="session.aclass"></i> {{ session.room }} </p> 
-                                    <p class="pb-1 text-reds" v-for="(speaker, idx) in session.speakers" :key="idx"> <i class="fa-solid fa-user text-gray-400"></i> {{ speaker.name }} </p>
-                                </div> 
-                            </div>
-                            <div class="w-3/4 flex-col flex gap-4">
-                                    <p class="font-semibold uppercase text-2xl" :class="session.opclass">
-                                        {{ session.description }}
-                                    </p>
-                                    <p class="text-gray-400" :class="session.iclass">
-                                        {{ session.overview }}
-                                    </p>
+                                <p class="font-semibold uppercase text-2xl" :class="session.opclass">
+                                    {{ session.description }}
+                                </p>
+                                <p class="text-gray-400" :class="session.iclass">
+                                    {{ session.overview }}
+                                </p>
                                 <div class="flex">
                                     <img v-for="(speaker, idx) in session.speakers" :key="idx" :src="speaker.image" :alt="speaker.image" class="w-10 h-10 rounded mr-2 mb-6">
                                 </div>
